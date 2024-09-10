@@ -3,11 +3,11 @@ When developing an app with SwiftUI, there are many architecture options to choo
 Here, we will examine examples to explore the strengths and weaknesses of various architectures.    
 
 ## Here are the architectures covered:
-MVVM    
-MVI    
-Clean Architecture    
-Redux    
-TCA    
+#### MVVM    
+#### MVI    
+#### Clean Architecture    
+#### Redux    
+#### TCA    
 
 ## Getting Started
 - Test code is also provided!    
