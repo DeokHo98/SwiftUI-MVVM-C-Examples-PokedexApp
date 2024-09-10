@@ -17,7 +17,7 @@ so if you want to focus on the architecture, please concentrate on the PokemonMo
 I am just a junior iOS developer with only two years of experience
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/d1eb833a-0735-4473-8504-b105fce2cc7a" width="450" height="700" alt="Simulator Screenshot - Clone 1 of iPhone 15 Pro - 2024-09-10 at 16 34 19">
+  <img src="https://github.com/user-attachments/assets/d1eb833a-0735-4473-8504-b105fce2cc7a" width="450" height="800" alt="Simulator Screenshot - Clone 1 of iPhone 15 Pro - 2024-09-10 at 16 34 19">
 </p>
 
 
