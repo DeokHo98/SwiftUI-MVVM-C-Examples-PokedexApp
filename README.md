@@ -11,7 +11,7 @@ Here, we will examine examples to explore the strengths and weaknesses of variou
 
 ## Getting Started
 - Test code is also provided!    
-- If you want to focus only on the architecture patterns,     
-please look closely at the PokemonModule of each project.    
+- The code is written as FirstParty as much as possible,    
+so if you want to focus on the architecture, please concentrate on the PokemonModule folder.     
 - Each architecture pattern might not be perfect and is not the definitive answer.    
 I am just a junior iOS developer with only two years of experience      
