@@ -73,5 +73,42 @@ This means that different projects may use different variations of the MVVM-C pa
 - In larger apps, complexity increases:       
 In more complex apps, all logic except for rendering the View or handling screen transitions may be offloaded to the ViewModel, potentially leading to a Massive ViewModel.        
 
+## MVVM-C workflow
+### Diagram
+<img width="647" alt="스크린샷 2024-09-11 오후 3 11 04" src="https://github.com/user-attachments/assets/0ee85823-2f0e-4401-a69f-7f97b983a6c7">
 
-
+### UI Rendering of View and Event Sending to ViewModel     
+The View renders the UI and sends events to the ViewModel.     
+These events can be a button tap or an onAppear when the screen is displayed.      
+In the example app, this applies when the screen is shown or when the filter button is pressed.      
+     
+### Receiving Events and Performing Logic in ViewModel     
+The ViewModel receives events from the View and performs the corresponding logic.      
+In the example app, this involves making network requests to the Network Service to fetch List data or executing list filtering logic for the filter button.      
+       
+### Network Communication by Network Service      
+The Network Service handles communication with external servers and converts JSON data into Model objects to be passed to the ViewModel.      
+         
+### Data Processing in ViewModel      
+The ViewModel processes the Model provided by the Network Service into data suitable for displaying in the View.      
+The name ViewModel might be derived from this concept: Model for the View = ViewModel.      
+       
+### Screen Updates in View       
+The ViewModel does not know about the View. Therefore, the View updates the data to be displayed on its own.      
+This is done using various binding objects in SwiftUI.       
+In the example app, @Observable was used.      
+      
+### Screen Navigation by Coordinator         
+If the ViewModel receives an event related to screen navigation, it delegates this to the Coordinator.       
+The Coordinator then provides the appropriate View to the app to facilitate screen navigation.        
+      
+### Cases     
+When the app is launched:         
+View -> ViewModel -> Network Service (Model) -> ViewModel -> View      
+     
+When the filter button is pressed:     
+View -> ViewModel -> View    
+    
+When a cell is tapped to navigate to detail:     
+View -> ViewModel -> Coordinator -> App      
+     
