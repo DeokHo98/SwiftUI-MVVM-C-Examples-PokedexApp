@@ -1,6 +1,6 @@
 # SwiftUI MVVM-C Examples PokedexApp
 When developing an app with SwiftUI, there are many architecture options to choose from.     
-Here,Here, we will examine an example using MVVM-C.     
+Here, we will examine an example using MVVM-C.     
 
 ## Getting Started
 - The app is a very simple example with three main features: a basic list, a filtering function for the list, and navigation to a detail screen.      
