@@ -107,7 +107,7 @@ If the ViewModel receives an event related to screen navigation, it delegates th
 The Coordinator then provides the appropriate View to the app to facilitate screen navigation.        
       
 ### Cases     
-When the app is launched:         
+When the show View:         
 View -> ViewModel -> Network Service (Model) -> ViewModel -> View      
      
 When the filter button is pressed:     
