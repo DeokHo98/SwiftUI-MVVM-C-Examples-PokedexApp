@@ -39,6 +39,8 @@ In traditional MVVM, this role was entirely handled by the View. However, if com
 Additionally, it becomes difficult to test. To address these drawbacks, the Coordinator is a separate object designed specifically for this purpose.       
       
 ## Advantages of MVVM-C
+By adopting MVVM-C, developers can create more modular, testable, and maintainable iOS applications, particularly beneficial for projects expected to grow in complexity over time.
+      
 - Clear Separation of Concerns:          
 Each component has a well-defined responsibility, making the codebase more organized and maintainable.     
 - Improved Testability:        
@@ -47,11 +49,10 @@ ViewModels and Coordinators can be easily unit tested without dependencies on UI
 As the app grows, new features can be added without significantly impacting existing components.    
 - Relatively easy:      
 Implementation pattern that is not too difficult, with a low learning curve.      
-      
-By adopting MVVM-C, developers can create more modular, testable, and maintainable iOS applications, particularly beneficial for projects expected to grow in complexity over time.
-      
+            
 ## Disadvantage of MVVM-C
 While MVVM-C offers many benefits, it's important to consider its potential drawbacks     
+      
 - Consistency Challenges:     
 Not all programmers employ the same MVVM-C pattern.     
 This means that different projects may use different variations of the MVVM-C pattern, resulting in some inconsistency.      
