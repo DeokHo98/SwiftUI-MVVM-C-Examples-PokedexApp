@@ -1,4 +1,4 @@
-# SwiftUI Various Architecture Examples PokedexApp
+# SwiftUI MVVM-C Examples PokedexApp
 When developing an app with SwiftUI, there are many architecture options to choose from.     
 Here, we will examine examples to explore the strengths and weaknesses of various architectures.    
 
