@@ -3,8 +3,7 @@ When developing an app with SwiftUI, there are many architecture options to choo
 Here, we will examine examples to explore the strengths and weaknesses of various architectures.    
 
 ## Getting Started
-- The app is a very simple example with three main features: a basic list,     
-a filtering function for the list, and navigation to a detail screen.     
+- The app is a very simple example with three main features: a basic list, a filtering function for the list, and navigation to a detail screen.      
 - The code is written as FirstParty as much as possible and includes test code.
 - If you want to focus on the architecture, please pay attention to the PokemonModule.
 - Each architecture pattern may not be perfect and is not the definitive answer. I am a junior iOS developer with only two years of experience.
