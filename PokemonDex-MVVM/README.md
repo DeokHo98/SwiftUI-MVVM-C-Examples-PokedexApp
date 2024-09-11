@@ -36,7 +36,7 @@ It is the object that performs the above roles.
 ### Coordinator
 The Coordinator is responsible for managing screen navigation.      
 In traditional MVVM, this role was entirely handled by the View. However, if complex navigation logic is kept in the View, the code can become complicated and maintenance can be challenging.      
-Additionally, it becomes difficult to test. To address these drawbacks, the Coordinator is a separate object designed specifically for this purpose."     
+Additionally, it becomes difficult to test. To address these drawbacks, the Coordinator is a separate object designed specifically for this purpose.       
       
 ## Advantages of MVVM-C
 - Clear Separation of Concerns:          
@@ -55,5 +55,5 @@ While MVVM-C offers many benefits, it's important to consider its potential draw
 - Consistency Challenges:     
 Not all programmers employ the same MVVM-C pattern.     
 This means that different projects may use different variations of the MVVM-C pattern, resulting in some inconsistency.      
-- In larger apps, complexity increases.:       
+- In larger apps, complexity increases:       
 In more complex apps, all logic except for rendering the View or handling screen transitions may be offloaded to the ViewModel, potentially leading to a Massive ViewModel.        
