@@ -37,7 +37,6 @@ final class Coordinator: CoordinatorDependency {
     }
     
     /// Returns the appropriate view for the given destination.
-    @ViewBuilder
     func showScene(destination: AppDestination) -> some View {
         switch destination {
         case .pokemonDexDetail(let viewModel):
