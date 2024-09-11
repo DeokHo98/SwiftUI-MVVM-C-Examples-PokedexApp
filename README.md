@@ -27,7 +27,7 @@ Model-View-ViewModel, by introducing a Coordinator object responsible for
 screen navigation, thus separating the responsibilities that were previously      
 handled by the View.     
      
-Let’s take a look at the roles each object plays.     
+Let's take a look at what components there are.      
 
 ### Model
 Simply put, the Model represents the data.    
