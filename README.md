@@ -11,13 +11,7 @@ Here, we will examine examples to explore the strengths and weaknesses of variou
 
 ## Explanation by Architecture
 #### [MVVM-C](https://github.com/DeokHo98/SwiftUI-Various-Architecture-Examples-PokedexApp/tree/main/PokemonDex-MVVM)
-
-
-## Example App Photo
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/d1eb833a-0735-4473-8504-b105fce2cc7a" width="450" height="800" alt="Simulator Screenshot - Clone 1 of iPhone 15 Pro - 2024-09-10 at 16 34 19">
-</p>
-
+    
 ## Explanation of MVVM-C (Model-View-ViewModel-Coordinator)
 MVVM architecture has likely been the most popular since the UIKit days     
 and is commonly used in apps of moderate size.     
