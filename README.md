@@ -18,7 +18,7 @@ This example app also follows this approach and separates it under the name 'Net
   <img src="https://github.com/user-attachments/assets/d1eb833a-0735-4473-8504-b105fce2cc7a" width="450" height="800" alt="Simulator Screenshot - Clone 1 of iPhone 15 Pro - 2024-09-10 at 16 34 19">
 </p>
     
-## Explanation of MVVM-C (Model-View-ViewModel-Coordinator)
+## MVVM-C (Model-View-ViewModel-Coordinator) OverView 
 MVVM architecture has likely been the most popular since the UIKit days     
 and is commonly used in apps of moderate size.     
      
@@ -77,7 +77,7 @@ This means that different projects may use different variations of the MVVM-C pa
 - In larger apps, complexity increases:       
 In more complex apps, all logic except for rendering the View or handling screen transitions may be offloaded to the ViewModel, potentially leading to a Massive ViewModel.        
 
-## MVVM-C workflow
+## MVVM-C Workflow
 ### Diagram
 <img width="647" alt="스크린샷 2024-09-11 오후 3 11 04" src="https://github.com/user-attachments/assets/0ee85823-2f0e-4401-a69f-7f97b983a6c7">
 
