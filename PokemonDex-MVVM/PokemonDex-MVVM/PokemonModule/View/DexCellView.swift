@@ -52,8 +52,3 @@ struct DexCellView: View {
         .shadow(color: viewModel.backgroundColor, radius: 6)
     }
 }
-
-#Preview {
-    let mockViewModel = DexCellViewModel(model: .init(id: 0, name: "name", imageURL: "image", type: "fire"))
-    return DexCellView(viewModel: mockViewModel)
-}

@@ -29,7 +29,7 @@ struct NetworkService: NetworkServiceDependecny {
         logging(urlString: urlString, httpMethod: httpMethod)
         let url = try getURL(urlString: urlString)
         let request = createRequest(url: url, httpMethod: httpMethod)
-        let (data, response) = try await URLSession.shared.data(for: request)
+        let (data, response) = try await fetchDataAsync(request: request)
         try validateResponse(response: response, urlString: urlString)
         return try decodeData(data)
     }
@@ -62,6 +62,16 @@ extension NetworkService {
         var request = URLRequest(url: url)
         request.httpMethod = httpMethod.rawValue
         return request
+    }
+    
+    /// Fetch data asynchronously from the network using the provided request
+    private func fetchDataAsync(request: URLRequest) async throws -> (Data, URLResponse) {
+        do {
+            return try await URLSession.shared.data(for: request)
+        } catch {
+            Log.error("URLSession Error", error.localizedDescription)
+            throw error
+        }
     }
     
     /// Validates the HTTP response

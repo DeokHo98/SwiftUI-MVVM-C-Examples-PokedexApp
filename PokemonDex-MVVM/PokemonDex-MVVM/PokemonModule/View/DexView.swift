@@ -87,10 +87,3 @@ struct FilterButton: View {
             .padding(5)
     }
 }
-
-
-#Preview {
-    let coordinator = Coordinator()
-    let viewModel = DexViewModel(coordinator: coordinator)
-    return DexView(viewModel: viewModel)
-}
