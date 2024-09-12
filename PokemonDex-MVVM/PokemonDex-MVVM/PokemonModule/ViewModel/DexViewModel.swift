@@ -21,14 +21,14 @@ final class DexViewModel {
     
     // MARK: - Properties
     
-    private let coordinator: any CoordinatorDependency
+    private let coordinator: CoordinatorDependency
     private let netWorkService: NetworkServiceDependecny
     private var cellViewModels: [DexCellViewModel] = []
     
     // MARK: - LifeCycle
     
     init(netWorkService: NetworkServiceDependecny = NetworkService(),
-         coordinator: any CoordinatorDependency) {
+         coordinator: CoordinatorDependency) {
         self.netWorkService = netWorkService
         self.coordinator = coordinator
     }
