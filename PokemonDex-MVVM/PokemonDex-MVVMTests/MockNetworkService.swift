@@ -22,7 +22,7 @@ extension MockError: LocalizedError {
 
 // MARK: - Mock NetworkService
 
-final class MockNetworkService: NetworkServiceDependecny {
+final class MockNetworkService: NetworkServiceDependency {
     var model: Any?
     var error: MockError?
     

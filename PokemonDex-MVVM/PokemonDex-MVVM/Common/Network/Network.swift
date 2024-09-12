@@ -17,12 +17,12 @@ protocol NetworkEndPoint {
 
 // MARK: - NetworkService
 
-protocol NetworkServiceDependecny {
+protocol NetworkServiceDependency {
     /// Performs a network request and decodes the response into the specified Decodable type.
     func requestData<T: Decodable>(endPoint: NetworkEndPoint) async throws -> T
 }
 
-struct NetworkService: NetworkServiceDependecny {
+struct NetworkService: NetworkServiceDependency {
     func requestData<T: Decodable>(endPoint: NetworkEndPoint) async throws -> T {
         let urlString = endPoint.baseURL + endPoint.path
         let httpMethod = endPoint.httpMethod
