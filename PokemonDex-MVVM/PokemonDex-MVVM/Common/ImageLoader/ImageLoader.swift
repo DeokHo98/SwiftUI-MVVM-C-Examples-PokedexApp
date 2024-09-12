@@ -35,12 +35,10 @@ final class ImageLoader {
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
             guard let image = UIImage(data: data) else {
-                Log.error("invalied Image Data")
                 return nil
             }
             return image
         } catch {
-            Log.error(error.localizedDescription)
             return nil
         }
     }
