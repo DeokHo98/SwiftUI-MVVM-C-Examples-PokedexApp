@@ -53,7 +53,7 @@ struct DexView: View {
                 }
             }
             .alert(viewModel.alertMessage, isPresented: $viewModel.isShowAlert, actions: {
-                Button(Constants.String.Pokedex) {
+                Button(Constants.String.retry) {
                     Task {
                         await viewModel.fetchCellViewModels()
                     }
