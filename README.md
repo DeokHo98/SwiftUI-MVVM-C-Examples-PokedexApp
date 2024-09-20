@@ -5,7 +5,6 @@ Here, we will examine an example using MVVM-C.
 ## Getting Started
 - The app is a very simple example with three main features: a basic list, a filtering function for the list, and navigation to a detail screen.      
 - The code was written as first-party as much as possible.
-- Dependency injection is implemented for each architecture component.
 - Test code is also included.   
 - Originally, MVVM includes network communication logic within the ViewModel. However, many programmers separate this logic into components named Repository or Service.      
 This example app also follows this approach and separates it under the name 'Network Service.'      
