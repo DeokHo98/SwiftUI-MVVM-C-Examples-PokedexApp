@@ -116,7 +116,7 @@ View -> ViewModel -> View
 When a cell is tapped to navigate to detail:     
 View -> ViewModel -> Coordinator -> App      
 
-## Key points in MVVM
+## Key points in MVVM-C
 ### Responsibility Separation
 - Model is responsible for handling data.    
 - The View is only responsible for rendering.    
