@@ -115,4 +115,20 @@ View -> ViewModel -> View
     
 When a cell is tapped to navigate to detail:     
 View -> ViewModel -> Coordinator -> App      
-     
+
+## Key points in MVVM
+### Responsibility Separation
+- Model is responsible for handling data.    
+- The View is only responsible for rendering.    
+- Any other logic is handled by the ViewModel.    
+Considering the potential bloat of the ViewModel,    
+it's possible to create multiple objects like a Coordinator or NetworkService.
+However, if the ViewModel still becomes too large and maintaining it becomes difficult,
+it may be necessary to adopt a more advanced architecture such as Clean Architecture or RIBs.
+### Data Binding
+- The ViewModel does not know about the View and does not instruct it to display data.
+Instead, the View automatically updates based on the data in the ViewModel.     
+Although you can use frameworks like Rx or Combine for this, SwiftUI provides its own tools like @Observable to handle such updates.
+### Testability
+- In MVVM, since the View and business logic (ViewModel) are separated, the ViewModel can be tested independently without involving any UI code.     
+This enhances the maintainability of the app and improves the efficiency of testing.
