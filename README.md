@@ -76,8 +76,7 @@ This means that different projects may use different variations of the MVVM-C pa
 - In larger apps, complexity increases:       
 In more complex apps, all logic except for rendering the View or handling screen transitions may be offloaded to the ViewModel, potentially leading to a Massive ViewModel.        
 
-## MVVM-C Workflow
-### Diagram
+## MVVM-C Diagram
 <img width="647" alt="스크린샷 2024-09-11 오후 3 11 04" src="https://github.com/user-attachments/assets/0ee85823-2f0e-4401-a69f-7f97b983a6c7">
 
 ### UI Rendering of View and Event Sending to ViewModel     
@@ -104,16 +103,6 @@ In the example app, @Observable was used.
 ### Screen Navigation by Coordinator         
 If the ViewModel receives an event related to screen navigation, it delegates this to the Coordinator.       
 The Coordinator then provides the appropriate View to the app to facilitate screen navigation.        
-      
-### Cases     
-When the show View:         
-View -> ViewModel -> Network Service (Model) -> ViewModel -> View      
-     
-When the filter button is pressed:     
-View -> ViewModel -> View    
-    
-When a cell is tapped to navigate to detail:     
-View -> ViewModel -> Coordinator -> App      
 
 ## Key points in MVVM-C
 ### Responsibility Separation
