@@ -76,7 +76,7 @@ This means that different projects may use different variations of the MVVM-C pa
 - In larger apps, complexity increases:       
 In more complex apps, all logic except for rendering the View or handling screen transitions may be offloaded to the ViewModel, potentially leading to a Massive ViewModel.        
 
-## MVVM-C Diagram
+## MVVM-C Flow Diagram
 <img width="647" alt="스크린샷 2024-09-11 오후 3 11 04" src="https://github.com/user-attachments/assets/0ee85823-2f0e-4401-a69f-7f97b983a6c7">
 
 ### UI Rendering of View and Event Sending to ViewModel     
