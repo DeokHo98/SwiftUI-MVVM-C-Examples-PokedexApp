@@ -45,7 +45,6 @@ final class DexViewModel {
     
     // MARK: - Function
     
-    /// Asynchronously fetches Dex data from the network, updates `cellViewModels`, and sets filter models.
     func fetchCellViewModels() async {
         do {
             let models: [PokemonModel?] = try await netWorkService.requestData(
@@ -64,7 +63,6 @@ final class DexViewModel {
         coordinator.push(destination: .pokemonDexDetail(cellViewModel))
     }
     
-    /// Filters the `cellViewModels` based on the selected filter condition.
     private func selectedFilter() -> [DexCellViewModel] {
         guard selectedFilterWords != Constants.String.all else {
             return self.cellViewModels
@@ -74,14 +72,12 @@ final class DexViewModel {
         }
     }
     
-    /// Converts the array of Pokémon models into `DexCellViewModel` and updates `cellViewModels`.
     private func setCellViewModels(models: [PokemonModel?]) {
         self.cellViewModels = models
             .compactMap { $0 }
             .map { DexCellViewModel(model: $0) }
     }
     
-    /// Generates filter models from `DexCellViewModel` array and updates `filterModels`.
     private func setUniqueTypeFilterModels(viewModels: [DexCellViewModel]) {
         var seenTypes = Set<String>()
         self.filterModels = viewModels.compactMap { model in
